@@ -35,6 +35,10 @@ h5 {
   padding: 0px 2px;
 }
 
+.fa-copyright{
+color:rgb(0, 140, 255) ;
+}
+
 /* BUTTON HELPER CLASSES */
 
 .btn {
@@ -56,6 +60,12 @@ h5 {
   background-color: transparent;
 }
 
+.btn-light:hover {
+  color: white;
+  border: 3px solid rgb(0, 140, 255);
+  background-color: rgb(0, 140, 255);
+}
+
 .btn-dark {
   color: white;
   border: 3px solid rgb(92, 94, 76);
@@ -64,6 +74,13 @@ h5 {
 
 .btn-pink {
   background-color: rgb(196, 44, 69);
+  border: rgb(196, 44, 69);
+  border-radius: 5px;
+  color: white;
+}
+
+.btn-pink:hover {
+  background-color: rgb(253, 62, 94);
   border: rgb(196, 44, 69);
   border-radius: 5px;
   color: white;
@@ -167,6 +184,12 @@ h5 {
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
+}
+
+@media (max-width: 576px){
+  #first .overlay .navbar-top .nav-container .nav-list ul {
+    padding: 10px 0px;
+  }
 }
 
 #first .overlay .navbar-top .nav-container .nav-list ul li {
@@ -382,6 +405,15 @@ h5 {
   color: black;
 }
 
+#second .container .row .col .content-second .second-icons a:hover {
+  border: 1px solid #34495e;
+  background-color: #34495e;
+  border-radius: 25px;
+  padding: 10px 11px;
+  margin: 0px 8px;
+  color: white;
+}
+
 /* Codes For Second Section Ends Here */
 
 /* Codes For Third Section Starts here */
@@ -484,12 +516,13 @@ h5 {
   margin-inline-end: 165px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 577px) {
   #third .third-content .third-box .box-line {
-    margin-inline-start: 115px;
-    margin-inline-end: 115px;
+    margin-inline-start: 175px;
+    margin-inline-end: 186px;
   }
 }
+
 
 #third .third-content .third-box p {
   padding: 20px 10px 30px;
@@ -919,11 +952,15 @@ h5 {
 /* Codes For Form Starts Here  */
 #eighth .container .form-eight form {
   padding: 0px 20px 80px;
-  width: 100%;
+  width: 100%; 
 }
 
 #eighth .container .form-eight form input {
   outline: none;
+}
+
+#eighth .container .form-eight form input:hover {
+  border: 2px solid rgb(0, 140, 255);
 }
 
 #eighth .container .form-eight form .name {
@@ -943,6 +980,7 @@ h5 {
   width: 94%;
   padding: 10px;
   margin: 10px 0px;
+  text-transform: capitalize;
 }
 
 #eighth .container .form-eight form .message {
@@ -951,6 +989,10 @@ h5 {
   margin: 10px 0px;
   width: 94%;
   outline: none;
+}
+
+#eighth .container .form-eight form .message:hover {
+border: 1px solid  rgb(0, 140, 255);
 }
 
 #eighth .container .form-eight form .form-btn {
@@ -967,19 +1009,19 @@ h5 {
   }
 
   #eighth .container .form-eight form .name {
-    width: 85%;
+    width: 94%;
   }
 
   #eighth .container .form-eight form .email {
-    width: 85%;
+    width: 94%;
   }
 
   #eighth .container .form-eight form .subject {
-    width: 85%;
+    width: 94%;
   }
 
   #eighth .container .form-eight form .message {
-    width: 85%;
+    width: 94%;
   }
 
   #eighth .container .form-eight form .form-btn {
@@ -987,9 +1029,7 @@ h5 {
   }
 }
 
-@media (max-width:991px){
-
-}
+@media (max-width:991px) {}
 
 /* Codes For Form Ends Here  */
 
@@ -1014,6 +1054,14 @@ h5 {
   background-color: #505252;
 }
 
+#ninth .ninth-icons a:hover {
+  color: rgb(92, 89, 89);
+  margin: 0px 3px;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: #b9bdbd;
+}
+
 #ninth .ninth-icons .ninth-para {
   margin-top: 20px;
 }
@@ -1032,6 +1080,10 @@ h5 {
   color: white;
   background-color: rgb(196, 44, 69);
   border-radius: 5px;
+}
+
+#ninth .ninth-icons .back-to-top a:hover {
+  transform: rotate(180deg);
 }
 
 /* Codes For Ninth Section Ends Here */
